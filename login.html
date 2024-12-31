@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Форма регистрации и входа</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Форма Регистрации  -->
+        <form action="#" id="registrationForm" onsubmit="register(event)">
+            <label for="FnameId">Имя</label>
+            <input type="text" name="Fname" id="FnameId" required />
+            <label for="mailId">Электронная почта</label>
+            <input type="email" name="mail" id="mailId" required />
+            <label for="passwordID">Пароль</label>
+            <input type="password" name="password" id="passwordID" required />
+            <label for="passwordID_submit">Подтверждение пароля</label>
+            <input type="password" name="password_submit" id="passwordID_submit" required />
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <div class="login-prompt" id="close">
+            <span>Уже зарегистрированы? </span>
+            <a href="#login" id="openLoginForm">Войти</a>
+        </div>
+
+        <!-- Форма входа -->
+        <form action="#" id="loginForm" class="hidden" onsubmit="handleLogin(event)">
+            <h2 id="stop">Вход</h2>
+            <label for="loginEmail">Электронная почта</label>
+            <input type="email" name="loginEmail" id="loginEmail" required />
+            <label for="loginPassword">Пароль</label>
+            <input type="password" name="loginPassword" id="loginPassword" required />
+            <button type="submit">Войти</button>
+            <div class="login-prompt">
+                <a href="#forgotPassword" id="openForgotPasswordForm">Забыл пароль?</a>
+            </div>
+        </form>
+
+        <!-- Форма восстановления пароля -->
+        <form action="#" id="forgotPasswordForm" class="hidden">
+            <label for="forgotEmail">Электронная почта</label>
+            <input type="email" name="forgotEmail" id="forgotEmail" required>
+            <button type="submit">Отправить ссылку для восстановления пароля</button>
+            <div class="login-prompt"> 
+                <a href="#login" id="backToLoginForm">Назад к входу</a>
+            </div>
+        </form>
+    </div>
+    
+    <!-- JS -->
+    <script src="web.js"></script>
+</body>
+</html>

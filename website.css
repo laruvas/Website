@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стили для header */
+  header {
+    background-color: #006eff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Стили для nav */
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Стили для main */
+  main {
+    padding: 20px;
+  }
+  
+  /* Стили для section */
+  section {
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для article */
+  article {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для aside */
+  aside {
+    background-color: #e6e6e6;
+    padding: 20px;
+  }
+  
+  /* Стили для footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .login-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
